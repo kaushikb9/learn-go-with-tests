@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestHello(t *testing.T) {
 	t.Run("Saying hello to You", func(t *testing.T) {
@@ -37,4 +40,10 @@ func assetCorrectMessage(t testing.TB, got, want string) {
 	if got != want {
 		t.Errorf("got %q want %q", got, want)
 	}
+}
+
+func ExampleHello() {
+	greeting := Hello("KB", "French")
+	fmt.Println(greeting)
+	// Output: Bonjour, KB
 }

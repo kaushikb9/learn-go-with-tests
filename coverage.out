@@ -1,0 +1,14 @@
+mode: set
+hello/iterator/iterator.go:3.49,5.29 2 1
+hello/iterator/iterator.go:8.2,8.17 1 1
+hello/iterator/iterator.go:5.29,7.3 1 1
+hello/integer/integer.go:3.30,5.2 1 1
+hello/hello/hello.go:9.49,10.16 1 1
+hello/hello/hello.go:14.2,14.43 1 1
+hello/hello/hello.go:10.16,12.3 1 1
+hello/hello/hello.go:17.57,19.18 1 1
+hello/hello/hello.go:28.2,28.8 1 1
+hello/hello/hello.go:20.17,21.33 1 1
+hello/hello/hello.go:22.16,23.32 1 1
+hello/hello/hello.go:24.10,25.33 1 1
+hello/hello/hello.go:31.13,33.2 1 0
