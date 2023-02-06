@@ -1,24 +1,25 @@
 package wallet
 
 import (
+	"fmt"
 	"testing"
 )
 
 func TestWallet(t *testing.T) {
 
-	// t.Run("testing Deposit with pointer notation", func(t *testing.T) {
-	// 	wallet := Wallet{}
-	// 	walletAddr := &wallet
-	// 	walletAddr.Deposit(Bitcoin(10))
-	// 	got := walletAddr.Balance()
-	// 	fmt.Printf("in Test: wallet = %v\n walletAddr-as-v = %v\n walletAddr-as-p = %p\n", wallet, walletAddr, walletAddr)
-	// 	fmt.Printf("in Test: wallet.balance = %v\n &wallet.balance = %v\n (&wallet).balance = %v\n walletAddr.balance = %v\n", wallet.balance, &wallet.balance, (&wallet).balance, walletAddr.balance)
-	// 	want := Bitcoin(10)
-	// 	if got != want {
-	// 		t.Errorf("got %s want %s", got, want)
-	// 	}
+	t.Run("testing Deposit with pointer notation", func(t *testing.T) {
+		wallet := Wallet{}
+		walletAddr := &wallet
+		walletAddr.Deposit(Bitcoin(10))
+		got := walletAddr.Balance()
+		fmt.Printf("in Test: wallet = %v\n walletAddr-as-v = %v\n walletAddr-as-p = %p\n", wallet, walletAddr, walletAddr)
+		fmt.Printf("in Test: wallet.balance = %v\n &wallet.balance = %v\n (&wallet).balance = %v\n walletAddr.balance = %v\n", wallet.balance, &wallet.balance, (&wallet).balance, walletAddr.balance)
+		want := Bitcoin(11)
+		if got != want {
+			t.Errorf("got %s want %s", got, want)
+		}
 
-	// })
+	})
 
 	assertNoError := func(t testing.TB, got error) {
 		t.Helper()
