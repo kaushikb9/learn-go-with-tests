@@ -35,5 +35,4 @@ func assertError(t testing.TB, got, want error) {
 	if got != want {
 		t.Errorf("got %q want %q", got, want)
 	}
-
 }
